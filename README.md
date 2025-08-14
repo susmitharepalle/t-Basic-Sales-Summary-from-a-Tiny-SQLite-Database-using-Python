@@ -1,5 +1,5 @@
 # Basic-Sales-Summary-from-a-Tiny-SQLite-Database-using-Python
-## 📌 Project Overview
+## Project Overview
 This project demonstrates how to use **SQLite** inside **Python** to pull simple sales information from a database, perform basic aggregations (like total quantity sold and total revenue per product), nd visualize the results using a **Matplotlib** bar chart.
 
 It is a beginner-friendly exercise that covers:
@@ -11,7 +11,7 @@ It is a beginner-friendly exercise that covers:
 
 ---
 
-## 🗂 Dataset
+## Dataset
 We created a small SQLite database file named `sales_data.db` containing a single table:
 
 **`sales` Table Structure:**
@@ -23,9 +23,9 @@ We created a small SQLite database file named `sales_data.db` containing a singl
 
 ---
 
-## ⚙️ Steps Performed
+## Steps Performed
 
-### 1️⃣ Connect to the Database
+### Connect to the Database
 ```python
 import sqlite3
 conn = sqlite3.connect("sales_data.db")
@@ -35,7 +35,7 @@ We connected to the SQLite database file `sales_data.db` using Python's built-in
 
 ---
 
-### 2️⃣ Run SQL Query
+### Run SQL Query
 
 ```python
 query = """
@@ -56,7 +56,7 @@ This query:
 
 ---
 
-### 3️⃣ Load Data into Pandas DataFrame
+###Load Data into Pandas DataFrame
 
 ```python
 import pandas as pd
@@ -67,7 +67,7 @@ We loaded the SQL query results into a Pandas DataFrame for easy manipulation an
 
 ---
 
-### 4️⃣ Print Results
+#print Results
 
 ```python
 print(df)
@@ -85,7 +85,7 @@ Displayed the summary table in the terminal/Jupyter Notebook.
 
 ---
 
-### 5️⃣ Create and Save a Bar Chart
+###Create and Save a Bar Chart
 
 ```python
 import matplotlib.pyplot as plt
@@ -101,7 +101,7 @@ We created a bar chart showing **Revenue by Product** and saved it as `sales_cha
 
 ---
 
-## 📊 Final Insights
+##Final Insights
 
 * **Top-Selling Product by Revenue:** The chart quickly shows which product generated the most revenue.
 * **Total Quantity vs. Revenue:** Even if a product sold more units, it might not have the highest revenue due to pricing differences.
@@ -118,7 +118,7 @@ We created a bar chart showing **Revenue by Product** and saved it as `sales_cha
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. Install dependencies:
 
@@ -133,15 +133,3 @@ We created a bar chart showing **Revenue by Product** and saved it as `sales_cha
    ```
 4. Check the console for printed results and open `sales_chart.png` to view the chart.
 
----
-
-## 📝 Author
-
-Created as part of **Task 7: Basic Sales Summary** learning exercise to demonstrate beginner-level SQL + Python + Visualization skills.
-
-```
-
----
-
-If you want, I can also make you a **GitHub-ready version** with proper folder structure so that when you upload, Jupyter Notebook opens directly. Would you like me to do that?
-```
